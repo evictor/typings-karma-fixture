@@ -3,22 +3,20 @@ declare module fixture {
   var json: any[];
 
   function load(...files: string[]): HTMLElement[]|Object|any[];
-  function load(file: string, append: boolean = false): HTMLElement[]|Object|any[];
-  function load(file: string, file: string, append: boolean = false): HTMLElement[]|Object|any[];
-  function load(file: string, file: string, file: string, append: boolean = false): HTMLElement[]|Object|any[];
-  function load(file: string, file: string, file: string, file: string, append: boolean = false): HTMLElement[]|Object|any[];
-  function load(file: string, file: string, file: string, file: string, file: string, append: boolean = false): HTMLElement[]|Object|any[];
+  function load(file1: string, append?: boolean): HTMLElement[]|Object|any[];
+  function load(file1: string, file2: string, append?: boolean): HTMLElement[]|Object|any[];
+  function load(file1: string, file2: string, file3: string, append?: boolean): HTMLElement[]|Object|any[];
+  function load(file1: string, file2: string, file3: string, file4: string, append?: boolean): HTMLElement[]|Object|any[];
+  function load(file1: string, file2: string, file3: string, file4: string, file5: string, append?: boolean): HTMLElement[]|Object|any[];
 
   function set(...htmlStrs: string[]): HTMLElement|HTMLElement[];
-  function set(htmlStr: string, append = false): HTMLElement|HTMLElement[];
-  function set(htmlStr: string, htmlStr: string, append = false): HTMLElement|HTMLElement[];
-  function set(htmlStr: string, htmlStr: string, htmlStr: string, append = false): HTMLElement|HTMLElement[];
-  function set(htmlStr: string, htmlStr: string, htmlStr: string, htmlStr: string, append = false): HTMLElement|HTMLElement[];
-  function set(htmlStr: string, htmlStr: string, htmlStr: string, htmlStr: string, htmlStr: string, append = false): HTMLElement|HTMLElement[];
+  function set(htmlStr1: string, append?: boolean): HTMLElement|HTMLElement[];
+  function set(htmlStr1: string, htmlStr2: string, append?: boolean): HTMLElement|HTMLElement[];
+  function set(htmlStr1: string, htmlStr2: string, htmlStr3: string, append?: boolean): HTMLElement|HTMLElement[];
+  function set(htmlStr1: string, htmlStr2: string, htmlStr3: string, htmlStr4: string, append?: boolean): HTMLElement|HTMLElement[];
+  function set(htmlStr1: string, htmlStr2: string, htmlStr3: string, htmlStr4: string, htmlStr5: string, append?: boolean): HTMLElement|HTMLElement[];
 
   function cleanup(): void;
 
   function setBase(fixtureBasePath: string): void;
 }
-
-export = fixture;
