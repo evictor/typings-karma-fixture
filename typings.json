@@ -1,5 +1,6 @@
 {
   "name": "karma-fixture",
   "main": "src/fixture.d.ts",
-  "dependencies": {}
+  "dependencies": {},
+  "global": true
 }
